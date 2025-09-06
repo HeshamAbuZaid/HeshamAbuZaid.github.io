@@ -433,18 +433,12 @@ p {
     box-shadow: var(--shadow);
 
 
-    position: absolute;   /* instead of fixed */
-    top: 0;
-    left: 0;
-    width: 100%;
-    background: transparent; /* see-through over the hero */
-    box-shadow: none;
 }
 
 .navbar.scrolled {
     background: rgba(255, 255, 255, 0.95);
     box-shadow: var(--shadow-lg);
-    position: fixed; /* lock it after scroll */
+
 }
 
 .nav-container {
@@ -585,7 +579,7 @@ p {
     background-attachment: fixed;
     position: relative;
     overflow: hidden;
-    padding-top: 0px;
+    padding-top: 80px;
 }
 
 .hero::before {
