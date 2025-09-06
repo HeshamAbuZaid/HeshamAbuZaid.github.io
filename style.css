@@ -1748,3 +1748,28 @@ p {
 }
 
 /* JavaScript will set CSS custom property --progress-width */
+
+
+
+/* Remove padding that creates the gap */
+.hero {
+    padding-top: 0;
+}
+
+/* Let the navbar float on top of the hero section */
+.navbar {
+    position: absolute;   /* instead of fixed */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: transparent; /* see-through over the hero */
+    box-shadow: none;
+}
+
+/* Add background only when scrolled */
+.navbar.scrolled {
+    position: fixed; /* lock it after scroll */
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: var(--shadow-lg);
+}
+
