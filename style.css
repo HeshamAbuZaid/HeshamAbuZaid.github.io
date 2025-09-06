@@ -1310,6 +1310,18 @@ p {
     opacity: 0;
     transition: var(--transition);
 }
+.project-title-overlay {
+    position: absolute;
+    bottom: var(--space-4);
+    left: var(--space-4);
+    right: var(--space-4);
+    color: white;
+    font-size: clamp(1rem, 2vw, 1.3rem);
+    font-weight: 700;
+    z-index: 2;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}
+
 
 .project-card:hover .project-overlay {
     opacity: 1;
