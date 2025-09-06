@@ -1291,7 +1291,7 @@ p {
 }
 
 .project-image {
-    height: 200px;
+    height: 100px;
     background: var(--bg-gradient-primary);
     position: relative;
     overflow: hidden;
