@@ -723,7 +723,7 @@ p {
 
 /* Hero Image - Half Screen Size & Flexible */
 .hero-image {
-    position: relative;
+    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -731,7 +731,7 @@ p {
 }
 
 .image-container {
-    position: relative;
+    position: absolute;
     width: 50vw;
     max-width: 600px;
     min-width: 300px;
