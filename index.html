@@ -10,16 +10,30 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts - Modern Typography -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Background Elements -->
+    <div class="bg-elements">
+        <div class="bg-shape shape-1"></div>
+        <div class="bg-shape shape-2"></div>
+        <div class="bg-shape shape-3"></div>
+        <div class="floating-particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+    </div>
+
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <a href="#home">Hesham Abuzaid</a>
+                <a href="#home">Hesham<span class="logo-dot">.</span></a>
             </div>
             <ul class="nav-menu" id="nav-menu">
                 <li class="nav-item">
@@ -54,83 +68,156 @@
         <div class="hero-container">
             <div class="hero-content">
                 <div class="hero-text">
+                    <div class="hero-badge">
+                        <i class="fas fa-rocket"></i>
+                        <span>Available for Data Engineering Roles</span>
+                    </div>
                     <h1 class="hero-title">
                         Hi, I'm <span class="highlight">Hesham Abuzaid</span>
                     </h1>
-                    <h2 class="hero-subtitle">Senior Data Engineer</h2>
+                    <h2 class="hero-subtitle">Senior Data Engineer & Analytics Specialist</h2>
                     <p class="hero-description">
                         Transforming industrial operations through advanced analytics, automation, and real-time data processing. 
-                        12+ years of experience delivering data-driven solutions that generate millions in cost savings.
+                        12+ years of experience delivering data-driven solutions that generate millions in cost savings and operational excellence.
                     </p>
                     <div class="hero-buttons">
-                        <a href="#projects" class="btn btn-primary">View My Work</a>
-                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fas fa-code"></i>
+                            View My Work
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <i class="fas fa-paper-plane"></i>
+                            Get In Touch
+                        </a>
                     </div>
                     <div class="hero-stats">
                         <div class="stat-item">
-                            <span class="stat-number">12+</span>
+                            <span class="stat-number" data-count="12">12</span>
+                            <span class="stat-plus">+</span>
                             <span class="stat-label">Years Experience</span>
                         </div>
                         <div class="stat-item">
-                            <span class="stat-number">$5M+</span>
+                            <span class="stat-number" data-count="5">5</span>
+                            <span class="stat-plus">M+</span>
                             <span class="stat-label">Cost Savings</span>
                         </div>
                         <div class="stat-item">
-                            <span class="stat-number">90%</span>
+                            <span class="stat-number" data-count="90">90</span>
+                            <span class="stat-plus">%</span>
                             <span class="stat-label">Automation Efficiency</span>
                         </div>
                     </div>
                 </div>
-                <div class="hero-image" style="flex: 1 1 50%; min-width: 300px; display: flex; justify-content: center; align-items: center; padding: 20px;">
-                  <div class="image-container" style="width: 100%; max-width: 500px;">
-                    <img src="my_photo1.jpeg" alt="Hesham Abuzaid - Data Engineer" class="profile-photo" style="width: 100%; height: auto; border-radius: 15px; object-fit: cover;">
-                  </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <div class="image-backdrop"></div>
+                        <div class="image-frame">
+                            <img src="https://via.placeholder.com/600x700/667eea/ffffff?text=Professional+Photo" alt="Hesham Abuzaid - Data Engineer" class="profile-photo">
+                        </div>
+                        <div class="floating-icons">
+                            <div class="floating-icon icon-1"><i class="fab fa-python"></i></div>
+                            <div class="floating-icon icon-2"><i class="fas fa-database"></i></div>
+                            <div class="floating-icon icon-3"><i class="fas fa-chart-line"></i></div>
+                            <div class="floating-icon icon-4"><i class="fas fa-cogs"></i></div>
+                        </div>
+                    </div>
                 </div>
-
             </div>
         </div>
         <div class="scroll-indicator">
-            <a href="#about">
-                <i class="fas fa-chevron-down"></i>
+            <a href="#about" class="scroll-link">
+                <div class="scroll-arrow">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <span class="scroll-text">Scroll Down</span>
             </a>
         </div>
     </section>
 
+    <!-- Modern Section Separator -->
+    <div class="section-separator">
+        <div class="separator-line"></div>
+        <div class="separator-icon">
+            <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="separator-gradient"></div>
+    </div>
+
     <!-- About Section -->
-    <section id="about" class="about">
+    <section id="about" class="about section-padding">
         <div class="container">
             <div class="section-header">
+                <span class="section-tag">Get to know me</span>
                 <h2 class="section-title">About Me</h2>
                 <p class="section-subtitle">Bridging Engineering Excellence with Data Innovation</p>
             </div>
             <div class="about-content">
-                <div class="about-text">
-                    <p class="about-description">
-                        As a seasoned Data Engineer with over 12 years of experience in the oil & gas industry, I specialize in transforming complex industrial data into actionable insights. My expertise spans real-time data processing, automated reporting systems, and predictive analytics that drive operational excellence.
-                    </p>
-                    <p class="about-description">
-                        I have a proven track record of implementing data-driven solutions that have delivered remarkable results: 90% reduction in manual reporting time, $5M in annual cost savings, and 40% improvement in production throughput. My unique combination of petroleum engineering background and advanced programming skills allows me to understand both the technical challenges and business impact of data engineering solutions.
-                    </p>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <div class="about-intro">
+                            <h3>Data Engineer with Industrial Expertise</h3>
+                            <p class="about-description">
+                                As a seasoned Data Engineer with over 12 years of experience in the oil & gas industry, I specialize in transforming complex industrial data into actionable insights. My expertise spans real-time data processing, automated reporting systems, and predictive analytics that drive operational excellence.
+                            </p>
+                            <p class="about-description">
+                                I have a proven track record of implementing data-driven solutions that have delivered remarkable results: 90% reduction in manual reporting time, $5M in annual cost savings, and 40% improvement in production throughput. My unique combination of petroleum engineering background and advanced programming skills allows me to understand both the technical challenges and business impact of data engineering solutions.
+                            </p>
+                        </div>
+                        <div class="about-achievements">
+                            <div class="achievement-item">
+                                <div class="achievement-icon">
+                                    <i class="fas fa-trophy"></i>
+                                </div>
+                                <div class="achievement-content">
+                                    <h4>Excellence Award</h4>
+                                    <p>Outstanding Performance in Data Analytics</p>
+                                </div>
+                            </div>
+                            <div class="achievement-item">
+                                <div class="achievement-icon">
+                                    <i class="fas fa-medal"></i>
+                                </div>
+                                <div class="achievement-content">
+                                    <h4>Innovation Leader</h4>
+                                    <p>Process Automation & Optimization</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="about-highlights">
-                        <div class="highlight-item">
-                            <i class="fas fa-graduation-cap"></i>
-                            <div>
+                        <div class="highlight-card">
+                            <div class="highlight-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <div class="highlight-content">
                                 <h4>Education</h4>
-                                <p>M.Sc. Petroleum Engineering<br>B.Sc. with Honors (87.4%)</p>
+                                <p>M.Sc. Petroleum Engineering</p>
+                                <p>B.Sc. with Honors (87.4%)</p>
+                                <span class="highlight-badge">Cairo University</span>
                             </div>
                         </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-code"></i>
-                            <div>
+                        <div class="highlight-card">
+                            <div class="highlight-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="highlight-content">
                                 <h4>Programming</h4>
-                                <p>Python, SQL, C, MATLAB<br>VBA, OOP, Algorithms</p>
+                                <p>Python, SQL, C, MATLAB</p>
+                                <p>VBA, OOP, Algorithms</p>
+                                <span class="highlight-badge">Expert Level</span>
                             </div>
                         </div>
-                        <div class="highlight-item">
-                            <i class="fas fa-certificate"></i>
-                            <div>
+                        <div class="highlight-card">
+                            <div class="highlight-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <div class="highlight-content">
                                 <h4>Certifications</h4>
-                                <p>Harvard CS50, TÜV FS Eng<br>NEBOSH PSM, SAP PM</p>
+                                <p>Harvard CS50, TÜV FS Eng</p>
+                                <p>NEBOSH PSM, SAP PM</p>
+                                <span class="highlight-badge">10+ Certs</span>
                             </div>
                         </div>
                     </div>
@@ -139,332 +226,361 @@
         </div>
     </section>
 
+    <!-- Modern Section Separator -->
+    <div class="section-separator">
+        <div class="separator-line"></div>
+        <div class="separator-icon">
+            <i class="fas fa-cogs"></i>
+        </div>
+        <div class="separator-gradient"></div>
+    </div>
+
     <!-- Skills Section -->
-    <section id="skills" class="skills">
+    <section id="skills" class="skills section-padding">
         <div class="container">
             <div class="section-header">
+                <span class="section-tag">What I do best</span>
                 <h2 class="section-title">Technical Skills</h2>
                 <p class="section-subtitle">Comprehensive expertise across the data engineering spectrum</p>
             </div>
             <div class="skills-grid">
                 <div class="skill-category">
-                    <div class="skill-icon">
-                        <i class="fas fa-code"></i>
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Programming Languages</h3>
                     </div>
-                    <h3>Programming Languages</h3>
                     <div class="skill-items">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">SQL</span>
-                        <span class="skill-tag">C</span>
-                        <span class="skill-tag">MATLAB</span>
-                        <span class="skill-tag">VBA</span>
-                        <span class="skill-tag">Pine Script</span>
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">SQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">MATLAB</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">C / VBA</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="skill-category">
-                    <div class="skill-icon">
-                        <i class="fas fa-database"></i>
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <h3>Data Engineering</h3>
                     </div>
-                    <h3>Data Engineering</h3>
                     <div class="skill-items">
-                        <span class="skill-tag">ETL Pipelines</span>
-                        <span class="skill-tag">Real-time Processing</span>
-                        <span class="skill-tag">Data Warehousing</span>
-                        <span class="skill-tag">Statistical Analysis</span>
-                        <span class="skill-tag">Predictive Modeling</span>
-                        <span class="skill-tag">Time Series Analysis</span>
+                        <div class="skill-item">
+                            <span class="skill-name">ETL Pipelines</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="92%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Real-time Processing</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Data Warehousing</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Predictive Modeling</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="87%"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="skill-category">
-                    <div class="skill-icon">
-                        <i class="fas fa-industry"></i>
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <i class="fas fa-industry"></i>
+                        </div>
+                        <h3>Industrial Systems</h3>
                     </div>
-                    <h3>Industrial Systems</h3>
                     <div class="skill-items">
-                        <span class="skill-tag">DCS/SCADA</span>
-                        <span class="skill-tag">SAP PM</span>
-                        <span class="skill-tag">PETRODATA</span>
-                        <span class="skill-tag">Alarm Management</span>
-                        <span class="skill-tag">Process Control</span>
-                        <span class="skill-tag">HYSYS/OLGA</span>
+                        <div class="skill-item">
+                            <span class="skill-name">DCS/SCADA</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="93%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">SAP PM</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="82%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Process Control</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">HYSYS/OLGA</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 
                 <div class="skill-category">
-                    <div class="skill-icon">
-                        <i class="fas fa-chart-line"></i>
+                    <div class="skill-header">
+                        <div class="skill-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Analytics & Visualization</h3>
                     </div>
-                    <h3>Analytics & Visualization</h3>
                     <div class="skill-items">
-                        <span class="skill-tag">Dashboard Development</span>
-                        <span class="skill-tag">KPI Design</span>
-                        <span class="skill-tag">Advanced Excel</span>
-                        <span class="skill-tag">Reporting Automation</span>
-                        <span class="skill-tag">Data Visualization</span>
-                        <span class="skill-tag">Business Intelligence</span>
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <div class="skill-icon">
-                        <i class="fas fa-tools"></i>
-                    </div>
-                    <h3>Tools & Frameworks</h3>
-                    <div class="skill-items">
-                        <span class="skill-tag">Git/GitHub</span>
-                        <span class="skill-tag">Command Line</span>
-                        <span class="skill-tag">OOP</span>
-                        <span class="skill-tag">Algorithm Design</span>
-                        <span class="skill-tag">PIPESIM</span>
-                        <span class="skill-tag">Process Simulation</span>
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <div class="skill-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
-                    <h3>Risk & Safety</h3>
-                    <div class="skill-items">
-                        <span class="skill-tag">Root Cause Analysis</span>
-                        <span class="skill-tag">FMEA</span>
-                        <span class="skill-tag">Risk Assessment</span>
-                        <span class="skill-tag">Process Safety</span>
-                        <span class="skill-tag">HAZOP</span>
-                        <span class="skill-tag">MOC</span>
+                        <div class="skill-item">
+                            <span class="skill-name">Dashboard Development</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="89%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">KPI Design</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="91%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Advanced Excel</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="94%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Business Intelligence</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="83%"></div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Modern Section Separator -->
+    <div class="section-separator">
+        <div class="separator-line"></div>
+        <div class="separator-icon">
+            <i class="fas fa-project-diagram"></i>
+        </div>
+        <div class="separator-gradient"></div>
+    </div>
+
     <!-- Projects Section -->
-    <section id="projects" class="projects">
+    <section id="projects" class="projects section-padding">
         <div class="container">
             <div class="section-header">
+                <span class="section-tag">My recent work</span>
                 <h2 class="section-title">Featured Projects</h2>
                 <p class="section-subtitle">Data engineering solutions that deliver real business impact</p>
             </div>
             <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-robot"></i>
+                <div class="project-card featured">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
                         </div>
-                        <h3>Automated PTW & MOC Reporting System</h3>
-                    </div>
-                    <p class="project-description">
-                        Comprehensive automated reporting tool for daily Permit-to-Work meetings and Management of Change audits using Python and Excel VBA. Features real-time compliance monitoring and automated documentation generation.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Excel VBA</span>
-                        <span class="tech-tag">Automation</span>
-                        <span class="tech-tag">Compliance</span>
-                    </div>
-                    <div class="project-impact">
-                        <div class="impact-item">
-                            <span class="impact-number">90%</span>
-                            <span class="impact-label">Time Reduction</span>
-                        </div>
-                        <div class="impact-item">
-                            <span class="impact-number">243</span>
-                            <span class="impact-label">Hours Saved/Year</span>
+                        <div class="project-tech-stack">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Excel VBA</span>
                         </div>
                     </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link">
-                            <i class="fas fa-external-link-alt"></i>
-                            View Details
-                        </a>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Automated PTW & MOC Reporting System</h3>
+                            <span class="project-status">Featured</span>
+                        </div>
+                        <p class="project-description">
+                            Comprehensive automated reporting tool for daily Permit-to-Work meetings and Management of Change audits. Features real-time compliance monitoring and automated documentation generation.
+                        </p>
+                        <div class="project-metrics">
+                            <div class="metric-item">
+                                <span class="metric-value">90%</span>
+                                <span class="metric-label">Time Reduction</span>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-value">243</span>
+                                <span class="metric-label">Hours Saved/Year</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-chart-area"></i>
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
                         </div>
-                        <h3>Real-Time DCS Data Analytics Platform</h3>
-                    </div>
-                    <p class="project-description">
-                        Advanced data processing system that analyzes real-time production data from multiple industrial units. Includes predictive analytics for equipment failure prevention and process optimization algorithms.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Real-time Analytics</span>
-                        <span class="tech-tag">DCS Integration</span>
-                        <span class="tech-tag">Predictive Modeling</span>
-                    </div>
-                    <div class="project-impact">
-                        <div class="impact-item">
-                            <span class="impact-number">3</span>
-                            <span class="impact-label">Shutdowns Prevented</span>
-                        </div>
-                        <div class="impact-item">
-                            <span class="impact-number">20%</span>
-                            <span class="impact-label">Accuracy Improved</span>
+                        <div class="project-tech-stack">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Real-time</span>
                         </div>
                     </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link">
-                            <i class="fas fa-external-link-alt"></i>
-                            View Details
-                        </a>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Real-Time DCS Data Analytics</h3>
+                        </div>
+                        <p class="project-description">
+                            Advanced data processing system analyzing real-time production data from multiple industrial units with predictive analytics for equipment failure prevention.
+                        </p>
+                        <div class="project-metrics">
+                            <div class="metric-item">
+                                <span class="metric-value">3</span>
+                                <span class="metric-label">Shutdowns Prevented</span>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-value">20%</span>
+                                <span class="metric-label">Accuracy Improved</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-industry"></i>
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
                         </div>
-                        <h3>Production Optimization Analytics</h3>
-                    </div>
-                    <p class="project-description">
-                        Comprehensive data analysis framework leveraging 23 years of historical data to identify optimization opportunities. Machine learning algorithms for production forecasting and resource allocation.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Machine Learning</span>
-                        <span class="tech-tag">Historical Analysis</span>
-                        <span class="tech-tag">Optimization</span>
-                    </div>
-                    <div class="project-impact">
-                        <div class="impact-item">
-                            <span class="impact-number">40%</span>
-                            <span class="impact-label">Production Increase</span>
-                        </div>
-                        <div class="impact-item">
-                            <span class="impact-number">93%</span>
-                            <span class="impact-label">Waste Reduction</span>
+                        <div class="project-tech-stack">
+                            <span class="tech-badge">ML</span>
+                            <span class="tech-badge">Analytics</span>
                         </div>
                     </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link">
-                            <i class="fas fa-external-link-alt"></i>
-                            View Details
-                        </a>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Production Optimization Analytics</h3>
+                        </div>
+                        <p class="project-description">
+                            Comprehensive framework leveraging 23 years of historical data with machine learning algorithms for production forecasting and resource allocation.
+                        </p>
+                        <div class="project-metrics">
+                            <div class="metric-item">
+                                <span class="metric-value">40%</span>
+                                <span class="metric-label">Production Increase</span>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-value">$5M</span>
+                                <span class="metric-label">Annual Savings</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-database"></i>
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
                         </div>
-                        <h3>Condensate Tank Storage Management</h3>
-                    </div>
-                    <p class="project-description">
-                        Robust command-line program using Python OOP and SQL database integration for storage tank level management. Features automated alerts, capacity optimization, and predictive maintenance scheduling.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">OOP</span>
-                        <span class="tech-tag">SQL</span>
-                        <span class="tech-tag">CLI</span>
-                    </div>
-                    <div class="project-impact">
-                        <div class="impact-item">
-                            <span class="impact-number">20%</span>
-                            <span class="impact-label">Error Reduction</span>
-                        </div>
-                        <div class="impact-item">
-                            <span class="impact-number">100%</span>
-                            <span class="impact-label">Automation</span>
+                        <div class="project-tech-stack">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">SQL</span>
                         </div>
                     </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link">
-                            <i class="fas fa-external-link-alt"></i>
-                            View Details
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-tachometer-alt"></i>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Storage Management System</h3>
                         </div>
-                        <h3>KPI Dashboard & Performance Monitoring</h3>
-                    </div>
-                    <p class="project-description">
-                        Interactive dashboards for comprehensive performance monitoring across production facilities. Real-time KPI tracking, automated alerting, and executive reporting with drill-down capabilities.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Dashboard Design</span>
-                        <span class="tech-tag">KPI Development</span>
-                        <span class="tech-tag">Data Visualization</span>
-                        <span class="tech-tag">Reporting</span>
-                    </div>
-                    <div class="project-impact">
-                        <div class="impact-item">
-                            <span class="impact-number">$5M</span>
-                            <span class="impact-label">Annual Savings</span>
+                        <p class="project-description">
+                            Robust command-line program using Python OOP and SQL integration for tank level management with automated alerts and predictive maintenance.
+                        </p>
+                        <div class="project-metrics">
+                            <div class="metric-item">
+                                <span class="metric-value">20%</span>
+                                <span class="metric-label">Error Reduction</span>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-value">100%</span>
+                                <span class="metric-label">Automation</span>
+                            </div>
                         </div>
-                        <div class="impact-item">
-                            <span class="impact-number">25%</span>
-                            <span class="impact-label">Downtime Reduced</span>
-                        </div>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link">
-                            <i class="fas fa-external-link-alt"></i>
-                            View Details
-                        </a>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-icon">
-                            <i class="fas fa-wave-square"></i>
-                        </div>
-                        <h3>Enhanced Oil Recovery Research</h3>
-                    </div>
-                    <p class="project-description">
-                        Advanced research project on mechanical wave propagation for Enhanced Oil Recovery. Published research with innovative data modeling techniques and reservoir performance prediction algorithms.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">MATLAB</span>
-                        <span class="tech-tag">Research</span>
-                        <span class="tech-tag">Modeling</span>
-                        <span class="tech-tag">Publication</span>
-                    </div>
-                    <div class="project-impact">
-                        <div class="impact-item">
-                            <span class="impact-number">1</span>
-                            <span class="impact-label">Published Paper</span>
-                        </div>
-                        <div class="impact-item">
-                            <span class="impact-number">M.Sc.</span>
-                            <span class="impact-label">Thesis Project</span>
-                        </div>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://doi.org/10.36909/jer.14863" target="_blank" class="project-link">
-                            <i class="fas fa-external-link-alt"></i>
-                            View Publication
-                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Modern Section Separator -->
+    <div class="section-separator">
+        <div class="separator-line"></div>
+        <div class="separator-icon">
+            <i class="fas fa-briefcase"></i>
+        </div>
+        <div class="separator-gradient"></div>
+    </div>
+
     <!-- Experience Section -->
-    <section id="experience" class="experience">
+    <section id="experience" class="experience section-padding">
         <div class="container">
             <div class="section-header">
+                <span class="section-tag">Career journey</span>
                 <h2 class="section-title">Professional Experience</h2>
                 <p class="section-subtitle">12+ years of data-driven excellence in industrial operations</p>
             </div>
             <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
+                <div class="timeline-item active">
+                    <div class="timeline-marker">
+                        <div class="timeline-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                    </div>
                     <div class="timeline-content">
                         <div class="timeline-period">May 2020 - Present</div>
                         <h3>Operation Coordinator & Data Analytics Lead</h3>
@@ -473,16 +589,20 @@
                             Leading data-driven operations coordination across multi-unit oil, gas, and sour treatment facilities. Specializing in real-time analytics, process optimization, and automated reporting systems.
                         </p>
                         <ul class="achievements">
-                            <li>Developed automated data pipelines reducing manual reporting time by 90%</li>
-                            <li>Implemented real-time DCS analytics preventing 3 unplanned shutdowns worth millions</li>
-                            <li>Created comprehensive KPI dashboards across multiple production units</li>
-                            <li>Led optimization initiatives resulting in 40% production increase and $5M savings</li>
+                            <li><i class="fas fa-check"></i>Developed automated data pipelines reducing manual reporting time by 90%</li>
+                            <li><i class="fas fa-check"></i>Implemented real-time DCS analytics preventing 3 unplanned shutdowns worth millions</li>
+                            <li><i class="fas fa-check"></i>Created comprehensive KPI dashboards across multiple production units</li>
+                            <li><i class="fas fa-check"></i>Led optimization initiatives resulting in 40% production increase and $5M savings</li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="timeline-item">
-                    <div class="timeline-marker"></div>
+                    <div class="timeline-marker">
+                        <div class="timeline-icon">
+                            <i class="fas fa-cogs"></i>
+                        </div>
+                    </div>
                     <div class="timeline-content">
                         <div class="timeline-period">Sep 2016 - May 2020</div>
                         <h3>Control Room Operations Lead & Data Specialist</h3>
@@ -491,16 +611,20 @@
                             Specialized in real-time data processing, alarm management, and performance optimization across complex industrial systems including DCS/SCADA operations.
                         </p>
                         <ul class="achievements">
-                            <li>Processed real-time data from 20+ production units with 6 separators and 10 towers</li>
-                            <li>Developed automated data collection for PETRODATA Web with historical archiving</li>
-                            <li>Created performance models improving well performance by 70%</li>
-                            <li>Built alarm management analytics improving response efficiency by 20%</li>
+                            <li><i class="fas fa-check"></i>Processed real-time data from 20+ production units with 6 separators and 10 towers</li>
+                            <li><i class="fas fa-check"></i>Developed automated data collection for PETRODATA Web with historical archiving</li>
+                            <li><i class="fas fa-check"></i>Created performance models improving well performance by 70%</li>
+                            <li><i class="fas fa-check"></i>Built alarm management analytics improving response efficiency by 20%</li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="timeline-item">
-                    <div class="timeline-marker"></div>
+                    <div class="timeline-marker">
+                        <div class="timeline-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                    </div>
                     <div class="timeline-content">
                         <div class="timeline-period">Jul 2013 - Sep 2016</div>
                         <h3>Teaching Assistant & Research Data Analyst</h3>
@@ -509,10 +633,10 @@
                             Conducted advanced research in Enhanced Oil Recovery using data analytics and mechanical wave propagation modeling while developing educational content.
                         </p>
                         <ul class="achievements">
-                            <li>Published pioneering research on EOR using advanced data modeling techniques</li>
-                            <li>Developed reservoir performance prediction tools</li>
-                            <li>Created curriculum with real-world data analysis case studies</li>
-                            <li>Mentored students in data analysis methodologies</li>
+                            <li><i class="fas fa-check"></i>Published pioneering research on EOR using advanced data modeling techniques</li>
+                            <li><i class="fas fa-check"></i>Developed reservoir performance prediction tools</li>
+                            <li><i class="fas fa-check"></i>Created curriculum with real-world data analysis case studies</li>
+                            <li><i class="fas fa-check"></i>Mentored students in data analysis methodologies</li>
                         </ul>
                     </div>
                 </div>
@@ -520,91 +644,49 @@
         </div>
     </section>
 
+    <!-- Modern Section Separator -->
+    <div class="section-separator">
+        <div class="separator-line"></div>
+        <div class="separator-icon">
+            <i class="fas fa-envelope"></i>
+        </div>
+        <div class="separator-gradient"></div>
+    </div>
+
     <!-- Contact Section -->
-    <section id="contact" class="contact">
+    <section id="contact" class="contact section-padding">
         <div class="container">
             <div class="section-header">
+                <span class="section-tag">Let's work together</span>
                 <h2 class="section-title">Get In Touch</h2>
                 <p class="section-subtitle">Ready to discuss how data engineering can transform your operations</p>
             </div>
             <div class="contact-content">
                 <div class="contact-info">
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-envelope"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Email</h4>
-                            <p>AbuZaid.HAA@gmail.com</p>
-                        </div>
+                    <div class="contact-intro">
+                        <h3>Let's Start a Conversation</h3>
+                        <p>I'm always interested in discussing new opportunities, challenging projects, and innovative data solutions. Feel free to reach out!</p>
                     </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-phone"></i>
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>AbuZaid.HAA@gmail.com</p>
+                            </div>
                         </div>
-                        <div class="contact-details">
-                            <h4>Phone</h4>
-                            <p>+20 102 240 6398</p>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <p>+20 102 240 6398</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fas fa-map-marker-alt"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>Location</h4>
-                            <p>Mansoura, Egypt</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <div class="contact-icon">
-                            <i class="fab fa-linkedin"></i>
-                        </div>
-                        <div class="contact-details">
-                            <h4>LinkedIn</h4>
-                            <p>Hesham Abuzaid</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="contact-form-container">
-                    <form class="contact-form" action="#" method="POST">
-                        <div class="form-group">
-                            <input type="text" id="name" name="name" required>
-                            <label for="name">Your Name</label>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" id="email" name="email" required>
-                            <label for="email">Your Email</label>
-                        </div>
-                        <div class="form-group">
-                            <input type="text" id="subject" name="subject" required>
-                            <label for="subject">Subject</label>
-                        </div>
-                        <div class="form-group">
-                            <textarea id="message" name="message" rows="5" required></textarea>
-                            <label for="message">Your Message</label>
-                        </div>
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-text">
-                    <p>&copy; 2025 Hesham Abuzaid. All rights reserved.</p>
-                </div>
-                <div class="footer-links">
-                    <a href="#home">Back to Top</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div
