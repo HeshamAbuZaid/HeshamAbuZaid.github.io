@@ -576,7 +576,7 @@ p {
     background-attachment: fixed;
     position: relative;
     overflow: hidden;
-    padding-top: 0px;
+    padding-top: 80px;
 }
 
 .hero::before {
@@ -604,9 +604,8 @@ p {
     max-width: 1400px;
     margin: 0 auto;
     padding: 0 var(--space-6);
-    position: absolute;
+    position: relative;
     z-index: 1;
-    margin-top: 20px;
 }
 
 .hero-content {
