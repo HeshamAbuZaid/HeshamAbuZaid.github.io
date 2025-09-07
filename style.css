@@ -729,12 +729,12 @@ p {
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: top;
     animation: fadeInRight 1s ease-out;
 }
 
 .image-container {
-    position: absolute;
+    position: relative;
     width: 50vw;
     max-width: 600px;
     min-width: 300px;
