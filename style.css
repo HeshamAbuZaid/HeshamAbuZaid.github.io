@@ -729,7 +729,7 @@ p {
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: top;
+    align-items: center;
     animation: fadeInRight 1s ease-out;
 }
 
@@ -1763,3 +1763,27 @@ p {
 
 
 
+/* Hero Image Top-Right */
+.hero-image {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  max-width: 200px;   /* adjust as needed */
+  z-index: 10;
+}
+
+.hero-image img.profile-photo {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  object-fit: cover;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+/* Adjust hero content since image is absolute */
+.hero-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
