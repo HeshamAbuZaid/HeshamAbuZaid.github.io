@@ -679,13 +679,13 @@ p {
 .hero-buttons {
     display: flex;
     gap: var(--space-6);
-    margin-bottom: var(--space-12);
+    margin-bottom: var(--space-6);
     flex-wrap: wrap;
 }
 
 .hero-stats {
     display: flex;
-    gap: var(--space-8);
+    gap: var(--space-6);
     flex-wrap: wrap;
 }
 
@@ -835,6 +835,7 @@ p {
 
 .scroll-indicator {
     position: absolute;
+    top: 50px;
     bottom: 40px;
     left: 50%;
     transform: translateX(-50%);
